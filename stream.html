@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <section class="navbar-sec">
+        <nav class="navbar navbar-expand-lg bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="movie-stream-sec">
+        <div class="movie-stream-div">
+            <iframe id="movie_name" src="https://2embed.org/embed/tt5113044" width="100%" height="490px"
+                allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <div class="container">
+
+            <div class="row movie-details-row">
+                <div class="col-4 col-sm-2">
+                    <div class="movie-img">
+                        <img id="image-1" src="./img/movie-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-8 col-sm-10">
+                    <div class="movie-details">
+                        <span class="movie-name" id="movie_name">Minions: The Rise of Gru - 2022</span><br><br>
+                        <span>The untold story of one twelve-year-old's dream to become the world's greatest
+                            supervillain.</span><br><br>
+                        <span>
+                            <table>
+                                <tr>
+                                    <th>Country:</th>
+                                    <td id="movie_Country">United States</td>
+                                </tr>
+                                <tr>
+                                    <th>Genre:</th>
+                                    <td id="movie_Genre">Animation, Comedy, Adventure</td>
+                                </tr>
+                                <tr>
+                                    <th>Release:</th>
+                                    <td id="movie_Release">2022-07-01</td>
+                                </tr>
+                                <tr>
+                                    <th>Director:</th>
+                                    <td id="movie_Director">Kyle Balda,Brad Ableson,Jonathan del Val</td>
+                                </tr>
+                                <tr>
+                                    <th>Production:</th>
+                                    <td id="movie_Production">Universal Pictures, Illumination Entertainment</td>
+                                </tr>
+                                <tr>
+                                    <td><br><a id="movie_trailer" class="btn btn-primary" href="https://www.youtube.com/watch?v=HhIl_XJ-OGA" target="_blank">Trailer</a></td>
+                                </tr>
+                            </table>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./firebase.js" type="module"></script>
+
+</html>

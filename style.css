@@ -1,0 +1,95 @@
+body {
+    background-color: #0e2336;
+}
+
+/* navbar-sec */
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar {
+    border-style: solid;
+    border-bottom-color: #0b2e4e;
+}
+
+.bg-color {
+    background-color: #0e2336;
+}
+
+/* loading-sec */
+
+.loading-sec {
+    background-color: #0e2336;
+}
+
+.loading-sec img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* carousel-sec */
+
+.carousel-sec {
+    margin: 2%;
+}
+
+.carousel-inner {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.d-block {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* card-sec */
+
+.card-img img {
+    border-style: solid;
+    border-color: white;
+    width: 85%;
+    margin: 5%;
+    transition: transform .3s;
+}
+
+.card-img img:hover {
+    transform: scale(1.08);
+}
+
+/* movie-stream-sec */
+
+.movie-stream-div {
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    margin: 5%;
+    height: 500px;
+}
+
+.toggle-top-bar {
+    visibility: hidden !important;
+}
+
+.movie-img {
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+.movie-img img{
+    width: 100%;
+}
+.movie-details{
+    color: white;
+}
+.movie-name{
+    font-weight: 500;
+    font-size:x-large;
+}
+.movie-details-row{
+    margin-bottom: 5%;
+}

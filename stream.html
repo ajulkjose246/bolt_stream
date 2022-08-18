@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./firebase.js" type="module"></script>
-    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -20,8 +15,8 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,21 +51,21 @@
                         <span class="movie-name" id="movie_names">ajul</span><br><br>
                         <span>The untold story of one twelve-year-old's dream to become the world's greatest
                             supervillain.</span><br><br>
-                        <span>
-                            <table>
-                                <tr>
-                                    <th>Country:</th>
-                                    <td id="movie_Country">United States</td>
-                                </tr>
-                                <tr>
-                                    <th>Genre:</th>
-                                    <td id="movie_Genre">Animation, Comedy, Adventure</td>
-                                </tr>
-                                <tr>
-                                    <th>Release:</th>
-                                    <td id="movie_Release">2022-07-01</td>
-                                </tr>
-                                <tr>
+                            <span>
+                                <table>
+                                    <tr>
+                                        <th>Country:</th>
+                                        <td id="movie_Country">United States</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Genre:</th>
+                                        <td id="movie_Genre">Animation, Comedy, Adventure</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Release:</th>
+                                        <td id="movie_Release">2022-07-01</td>
+                                    </tr>
+                                    <tr>
                                     <th>Director:</th>
                                     <td id="movie_Director">Kyle Balda,Brad Ableson,Jonathan del Val</td>
                                 </tr>
@@ -91,3 +86,15 @@
 </body>
 
 </html>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./firebase.js" type="module"></script>
+<script src="./script.js"></script>
+<script>
+    $(document).ready(function(){
+        let sel_mov = localStorage.getItem('selected_movie') || 0;
+        
+    })
+</script>

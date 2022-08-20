@@ -2,6 +2,9 @@ body {
     background-color: #0e2336;
 }
 
+a{
+    text-decoration: none;
+}
 /* navbar-sec */
 
 .navbar-brand,
@@ -91,5 +94,30 @@ body {
     font-size:x-large;
 }
 .movie-details-row{
+    margin-bottom: 5%;
+}
+
+/* register-sec */
+
+.register-div,.login-div{
+    color: white;
+    margin: 10%;
+}
+.login-svg{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.reg-head{
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+}
+.register-btn{
+    text-align: center;
+}
+.register-btn button{
+    width: 100%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }

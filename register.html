@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        @media (max-width: 1000px) {
+
+            body {
+                overflow: visible;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="register-sec">
+        <div class="register-div">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6">
+                        <img class="login-svg" src="./img/undraw_fingerprint_re_uf3f.svg" alt="">
+                    </div>
+                    <div class="cre-acc col-12 col-sm-12 col-lg-6">
+                        <div class="reg-head">
+                            <span>Create a new account
+                                <hr>
+                            </span>
+                        </div>
+
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputname">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputemail">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputpassword">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="inputcpassword">
+                            </div>
+                            <div class="col-12 register-btn">
+                                <button type="submit" class="btn btn-primary">Register</button><br><br>
+                                <a class="exist_acc" href="#">Already have an account?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="login-sec">
+        <div class="login-div">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6">
+                        <img class="login-svg" src="./img/register.svg" alt="">
+                    </div>
+                    <div class="cre-acc col-12 col-sm-12 col-lg-6">
+                        <div class="reg-head">
+                            <span>Log in to Bolt Stream
+                                <hr>
+                            </span>
+                        </div>
+
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputemail">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputpassword">
+                            </div>
+                            <div class="col-12 register-btn">
+                                <button type="submit" class="btn btn-primary">Register</button>
+                                <a class="new_acc" href="#">Sign up for Bolt stream</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".login-sec").hide();
+        $(".exist_acc").click(function () {
+            $(".login-sec").show();
+            $(".register-sec").hide();
+
+        })
+        $(".new_acc").click(function () {
+            $(".login-sec").hide();
+            $(".register-sec").show();
+
+        })
+    })
+</script>
+
+</html>

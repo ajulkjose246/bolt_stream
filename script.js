@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
     $('.navbar-sec').hide();
     $(window).on('load', function () {
         $('.loading-sec').hide();
@@ -15,4 +16,5 @@ $(document).ready(function () {
         localStorage.setItem("user_pwd", 0);
         window.location.href = "./index.html";
     })
+    
 })

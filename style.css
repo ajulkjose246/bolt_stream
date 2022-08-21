@@ -151,8 +151,17 @@ a{
 .register-btn{
     text-align: center;
 }
-.register-btn button{
+.register-btn a{
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+/* mobile view */
+
+@media (max-width: 1000px) {
+    .dropdown-menu[data-bs-popper]{
+        left: 0px !important;
+        top: 50px;
+        background-color: #0b2e4e;
+    }
 }

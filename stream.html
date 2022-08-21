@@ -22,12 +22,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                    class="bi bi-house"></i> Home</a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <a class="nav-link active log-reg-btn" aria-current="page" href="./register.html">Login / Register <i class="bi bi-box-arrow-in-right"></i></a>
+                        <a class="nav-link active log-reg-btn" aria-current="page" href="./register.html">Login /
+                            Register <i class="bi bi-box-arrow-in-right"></i></a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle user_details" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
 
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item log-out-btn" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -61,7 +73,7 @@
                         <span class="movie-name" id="movie_names">ajul </span><br>
                         <a id="movie_trailer" href="https://www.youtube.com/watch?v=HhIl_XJ-OGA" target="_blank">
                             <i class="bi bi-camera-video-fill"></i> Trailer </a>
-                            <i class="bi bi-star-fill"></i><span class="imdb_rating">IMDB: 4.4</span><br>
+                        <i class="bi bi-star-fill"></i><span class="imdb_rating">IMDB: 4.4</span><br>
                         <br><span id="movie_bio">The untold story of one twelve-year-old's dream to become the world's
                             greatest
                             supervillain.</span><br><br>

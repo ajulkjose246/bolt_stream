@@ -15,7 +15,7 @@ const firebaseConfig = {
 };
 
 $(document).ready(function () {
-
+  $(".log-reg-btn").show();
   //read data
 
   initializeApp(firebaseConfig);
@@ -92,8 +92,10 @@ $(document).ready(function () {
   getDocs(pwdCheck).then((snapshot) => {
     snapshot.docs.forEach((doc) => {
       if(localStorage.getItem("user_email")==doc.data().Email && localStorage.getItem("user_pwd")==doc.data().Password){
+        $(".dropdown").show();
         $(".log-reg-btn").hide();
       }else{
+        $(".dropdown").hide();
         $(".log-reg-btn").show();
       }
     })

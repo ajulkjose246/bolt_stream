@@ -23,12 +23,19 @@ $(document).ready(function () {
   getDocs(colRef).then((snapshot) => {
       snapshot.docs.forEach((doc) => {
         displaydata(doc)
+        $("#"+doc.id).click(function(){
+          localStorage.setItem("movie_id", doc.id);
+        })
+        var movies_id = localStorage.getItem("movie_id");
+        if(movies_id==doc.id){
+          $("#image-1").attr("src", doc.data().ImageUrl);
+        }
       })
     }).catch(err => {
       console.log(err.message)
     })
-
   function displaydata(doc) {
-    $('#row').append("<div class='col-6 col-sm-6 col-md-4 col-lg-2 selmovie' movie='"+doc.id+"'><div class='card-img' id='card-img1'><a ><img src='"+doc.data().ImageUrl+"'></a></div></div>");
+    $('#row').append("<div class='col-6 col-sm-6 col-md-4 col-lg-2 selmovie' id='"+doc.id+"'><div class='card-img' id='card-img1'><a ><img src='"+doc.data().ImageUrl+"'></a></div></div>"); 
   }
+  
 })

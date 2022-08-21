@@ -97,6 +97,12 @@ a{
     margin-bottom: 5%;
 }
 
+.servers{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: -3%;
+}
+
 /* register-sec */
 
 .register-div,.login-div{

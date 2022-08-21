@@ -37,25 +37,27 @@
                             </span>
                         </div>
 
-                        <form class="row g-3">
+                        <form class="row g-3 needs-validation" novalidate>
                             <div class="col-md-12">
                                 <label class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputname">
+                                <input type="text" class="form-control" id="inputname" required>
                             </div>
                             <div class="col-md-12">
                                 <label class="form-label">Email</label>
-                                <input type="email" class="form-control" id="inputemail">
+                                <input type="email" class="form-control" id="inputemail" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Password</label>
-                                <input type="password" class="form-control" id="inputpassword">
+                                <input type="password" class="form-control" id="inputpassword" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="inputcpassword">
+                                <input type="password" class="form-control" id="inputcpassword" required>
+                            </div>
+                            <div class="col-md-12 error_msg">
                             </div>
                             <div class="col-12 register-btn">
-                                <button type="submit" class="btn btn-primary">Register</button><br><br>
+                                <button id="testing" type="submit" class="btn btn-primary">Register</button>
                                 <a class="exist_acc" href="#">Already have an account?</a>
                             </div>
                         </form>
@@ -115,7 +117,52 @@
             $(".register-sec").show();
 
         })
+
+        $("#inputpassword").keyup(function () {
+            pswd = document.getElementById("inputpassword").value
+            if (pswd.length >= 6) {
+                $(".error_msg").text("");
+            } else {
+                $(".error_msg").text("password must be 6 characters");
+            }
+        })
+        $("#inputcpassword").keyup(function () {
+            pswd = document.getElementById("inputpassword").value
+            cpswd = document.getElementById("inputcpassword").value
+            if (pswd.length >= 6) {
+                if (cpswd != pswd) {
+                    $(".error_msg").text("Passwords don't match");
+                } else {
+                    $(".error_msg").text("");
+                }
+            } else {
+                $(".error_msg").text("Password must be 6 characters");
+            }
+        })
+
     })
+</script>
+<script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+
+
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+
+        })()
 </script>
 
 </html>

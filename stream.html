@@ -13,7 +13,7 @@
     <section class="navbar-sec">
         <nav class="navbar navbar-expand-lg bg-color">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Bolt Stream</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form class="d-flex">
+                        <a class="nav-link active log-reg-btn" aria-current="page" href="./register.html">Login / Register <i class="bi bi-box-arrow-in-right"></i></a>
+
                     </form>
                 </div>
             </div>
@@ -35,17 +35,16 @@
     </section>
     <section class="movie-stream-sec">
         <div class="movie-stream-div">
-            <iframe id="movie_url" src="https://2embed.org/embed/tt5113044" width="100%" height="490px"
-                allowfullscreen="allowfullscreen">
+            <iframe id="movie_url" src="" width="100%" height="490px" allowfullscreen="allowfullscreen">
             </iframe>
         </div>
         <div class="servers">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">2embed</label>
-    
+                <label class="btn btn-outline-info" for="btnradio1">Server 1</label>
+
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btnradio2">VidSrc</label>
+                <label class="btn btn-outline-info" for="btnradio2">Server 2</label>
             </div>
 
         </div>
@@ -59,35 +58,26 @@
                 </div>
                 <div class="col-8 col-sm-10">
                     <div class="movie-details">
-                        <span class="movie-name" id="movie_names">ajul</span><br><br>
-                        <span>The untold story of one twelve-year-old's dream to become the world's greatest
+                        <span class="movie-name" id="movie_names">ajul </span><br>
+                        <a id="movie_trailer" href="https://www.youtube.com/watch?v=HhIl_XJ-OGA" target="_blank">
+                            <i class="bi bi-camera-video-fill"></i> Trailer </a>
+                            <i class="bi bi-star-fill"></i><span class="imdb_rating">IMDB: 4.4</span><br>
+                        <br><span id="movie_bio">The untold story of one twelve-year-old's dream to become the world's
+                            greatest
                             supervillain.</span><br><br>
                         <span>
                             <table>
                                 <tr>
-                                    <th>Country:</th>
-                                    <td id="movie_Country">United States</td>
+                                    <th>Director : </th>
+                                    <td id="movie_director">United States</td>
                                 </tr>
                                 <tr>
-                                    <th>Genre:</th>
+                                    <th>Genre : </th>
                                     <td id="movie_Genre">Animation, Comedy, Adventure</td>
                                 </tr>
                                 <tr>
-                                    <th>Release:</th>
+                                    <th>Release : </th>
                                     <td id="movie_Release">2022-07-01</td>
-                                </tr>
-                                <tr>
-                                    <th>Director:</th>
-                                    <td id="movie_Director">Kyle Balda,Brad Ableson,Jonathan del Val</td>
-                                </tr>
-                                <tr>
-                                    <th>Production:</th>
-                                    <td id="movie_Production">Universal Pictures, Illumination Entertainment</td>
-                                </tr>
-                                <tr>
-                                    <td><br><a id="movie_trailer" class="btn btn-primary"
-                                            href="https://www.youtube.com/watch?v=HhIl_XJ-OGA"
-                                            target="_blank">Trailer</a></td>
                                 </tr>
                             </table>
                         </span>
@@ -105,20 +95,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./firebase.js" type="module"></script>
 <script src="./script.js"></script>
-<script>
-    $(document).ready(function () {
-        let sel_mov = localStorage.getItem('selected_movie') || 0;
 
-    })
-</script>
-<script>
-    $(document).ready(function(){
-        $("#btnradio1").click(function(){
-            $("#movie_url").attr("src", "https://2embed.org/embed/tt5113044");
-        })
-        $("#btnradio2").click(function(){
-            $("#movie_url").attr("src", "https://v2.vidsrc.me/embed/tt5113044");
-        })
-    })
-</script>
 </html>

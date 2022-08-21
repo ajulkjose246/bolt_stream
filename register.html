@@ -22,6 +22,25 @@
 </head>
 
 <body>
+    <section class="navbar-sec">
+        <nav class="navbar navbar-expand-lg bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bolt Stream</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
     <section class="register-sec">
         <div class="register-div">
             <div class="container">
@@ -57,7 +76,7 @@
                             <div class="col-md-12 error_msg">
                             </div>
                             <div class="col-12 register-btn">
-                                <button id="testing" type="submit" class="btn btn-primary">Register</button>
+                                <button id="reg_btn" type="submit" class="btn btn-primary">Register</button>
                                 <a class="exist_acc" href="#">Already have an account?</a>
                             </div>
                         </form>
@@ -103,10 +122,11 @@
         </div>
     </section>
 </body>
+<script src="./firebase.js" type="module"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-        $(".login-sec").hide();
+        $(".register-sec").hide();
         $(".exist_acc").click(function () {
             $(".login-sec").show();
             $(".register-sec").hide();
@@ -118,31 +138,31 @@
 
         })
 
-        $("#inputpassword").keyup(function () {
-            pswd = document.getElementById("inputpassword").value
-            if (pswd.length >= 6) {
-                $(".error_msg").text("");
-            } else {
-                $(".error_msg").text("password must be 6 characters");
-            }
-        })
-        $("#inputcpassword").keyup(function () {
-            pswd = document.getElementById("inputpassword").value
-            cpswd = document.getElementById("inputcpassword").value
-            if (pswd.length >= 6) {
-                if (cpswd != pswd) {
-                    $(".error_msg").text("Passwords don't match");
-                } else {
-                    $(".error_msg").text("");
-                }
-            } else {
-                $(".error_msg").text("Password must be 6 characters");
-            }
-        })
+        // $("#inputpassword").keyup(function () {
+        //     pswd = document.getElementById("inputpassword").value
+        //     if (pswd.length >= 6) {
+        //         $(".error_msg").text("");
+        //     } else {
+        //         $(".error_msg").text("password must be 6 characters");
+        //     }
+        // })
+        // $("#inputcpassword").keyup(function () {
+        //     pswd = document.getElementById("inputpassword").value
+        //     cpswd = document.getElementById("inputcpassword").value
+        //     if (pswd.length >= 6) {
+        //         if (cpswd != pswd) {
+        //             $(".error_msg").text("Passwords don't match");
+        //         } else {
+        //             $(".error_msg").text("");
+        //         }
+        //     } else {
+        //         $(".error_msg").text("Password must be 6 characters");
+        //     }
+        // })
 
     })
 </script>
-<script>
+<!-- <script>
         (() => {
             'use strict'
 
@@ -163,6 +183,6 @@
             })
 
         })()
-</script>
+</script> -->
 
 </html>

@@ -10,4 +10,9 @@ $(document).ready(function () {
         localStorage.setItem("selected_movie",selmovie);
         window.location.href="./stream.html";
     })
+    $(".log-out-btn").click(function(){
+        localStorage.setItem("user_email", 0);
+        localStorage.setItem("user_pwd", 0);
+        window.location.href = "./index.html";
+    })
 })

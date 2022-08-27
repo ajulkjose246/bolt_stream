@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
-import { getFirestore, collection, getDocs, getDoc, doc } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
+import { getFirestore, collection, getDocs, getDoc, doc ,addDoc} from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
 
 const firebaseConfig = {
   piKey: "AIzaSyA3TKMBpNk0afNfDbJs3TJzs0hwu7KgBkA",
@@ -20,3 +20,7 @@ displaydata(collection, db, getDocs,doc,getDoc);
 
 //load stream page content
 streamdata(db,doc,getDoc);
+
+$("#upload_btn").click(function () {
+  add_user_data(collection,db,addDoc)
+})

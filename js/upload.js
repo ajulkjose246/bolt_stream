@@ -17,6 +17,7 @@ async function add_user_data(collection,db,addDoc) {
     )
       .then(() => {
         alert("success")
+        window.location.href = "upload.html";
       })
       .catch((error) => {
         alert("somthing wrong" + error)

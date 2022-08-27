@@ -30,21 +30,11 @@
                                     class="bi bi-house"></i> Home</a>
                         </li>
                     </ul>
-                    <!-- <form class="d-flex">
-                        <a class="nav-link active log-reg-btn" aria-current="page" href="./register.html">Login /
-                            Register <i class="bi bi-box-arrow-in-right"></i></a>
-                        <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle user_details" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-person-circle"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item log-out-btn" href="#">Logout</a></li>
-                            </ul>
-                        </div>
-                    </form> -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="search_bar" type="search" onkeyup="searchfun()"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -96,6 +86,16 @@
     </section>
     <section class="card-sec">
         <div class="container">
+            <div class="row card_filter">
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('all')" >All</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Drama')">Drama</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Action')">Action</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Thriller')">Thriller</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Adventure')">Adventure</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Horror')">Horror</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Sci-Fi')">Sci-Fi</span></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Mystery')">Mystery</span></div>
+            </div>
             <div class="row" id="row">
 
             </div>

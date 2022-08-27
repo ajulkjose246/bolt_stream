@@ -1,12 +1,10 @@
-const pwdCheck = collection(db, 'users/')
-  getDocs(pwdCheck).then((snapshot) => {
-    snapshot.docs.forEach((doc) => {
-      if(localStorage.getItem("user_email")==doc.data().Email && localStorage.getItem("user_pwd")==doc.data().Password){
-        $(".log-reg-btn").hide();
-      }else{
-        $(".log-reg-btn").show();
-      }
-    })
-  }).catch(err => {
-    console.log(err.message)
-  })
+<div class="row card_filter">
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Drama')">Drama</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Action')">Action</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Thriller')">Thriller</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Adventure')">Adventure</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Horror')">Horror</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Sci-Fi')">Sci-Fi</span></div>
+    <div class="col-4 col-sm-4 col-md-3 col-lg-2 "><span class="items" onclick="filterSelection('Mystery')">Mystery</span></div>
+</div>

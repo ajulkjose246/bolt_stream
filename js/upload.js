@@ -12,7 +12,9 @@ async function add_user_data(collection,db,addDoc) {
         IMDB: document.getElementById("mov_imdb").value,
         Bio: document.getElementById("mov_bio").value,
         ImageUrl: document.getElementById("mov_img").value,
-        Trailer: document.getElementById("mov_trailer").value
+        Trailer: document.getElementById("mov_trailer").value,
+        Language: document.getElementById("mov_language").value,
+        mov_banner: document.getElementById("mov_banner_img").value
     }
     )
       .then(() => {

@@ -75,31 +75,10 @@ a {
     margin-right: auto;
 }
 
-/* carousel-sec */
-
-.carousel-sec {
-    margin: 2%;
-}
-
-.carousel-inner {
-    border-style: solid;
-    border-radius: 10px;
-    border-color: transparent;
-    margin-top: 6%;
-    height: 500px;
-}
-
-.carousel-caption{
-    top: 46%;
-}
-
-.d-block {
-    width: 100% !important;
-    height: auto !important;
-}
-
 /* card-sec */
-
+.card-sec{
+    margin-top: 5%;
+}
 .selmovie{
     display: none;
 }
@@ -240,16 +219,7 @@ a {
         top: 50px;
         background-color: #0b2e4e;
     }
-    .carousel-inner {
-        border-style: solid;
-        border-radius: 10px;
-        border-color: transparent;
+    .card-sec{
         margin-top: 15%;
-    }
-    .carousel-inner {
-        border-style: solid;
-        border-radius: 10px;
-        border-color: transparent;
-        height: 250px;
     }
 }

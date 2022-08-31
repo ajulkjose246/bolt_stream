@@ -10,11 +10,6 @@ function displaydata(collection, db, getDocs) {
             $("#" + doc.id).click(function () {
                 localStorage.setItem("movie_id", doc.id);
             })
-            if (val < 4) {
-                $("#mov_banner_" + val).attr("src", doc.data().mov_banner);
-                $("#banner_head_" + val).text(doc.data().Name);
-                val = val + 1;
-            }
             console.log("ddd");
         })
     }).catch(err => {

@@ -20,7 +20,7 @@ function setstreamData(docSnap){
       $("#movie_url").attr("src", "https://v2.vidsrc.me/embed/" + docSnap.data().Server_id);
     })
     // $("#btnradio3").click(function () {
-    //   $("#movie_url").attr("src", "https://dood.pm/d/yz5e37r14445");
+    //   $("#movie_url").attr("src", "https://5198.svetacdn.in/VFBJTiaRsMZT/movie/" + docSnap.data().Server_id);
     //   // $("#movie_url").attr("src", "https://sbspeed.com/e/2sssi4pxbsp5.html");
     // })
     $("#movie_trailer").attr("href", docSnap.data().Trailer);

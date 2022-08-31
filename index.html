@@ -38,6 +38,8 @@
                                 <li><span class="nav-link items" onclick="filterSelection('Horror')">Horror</span></li>
                                 <li><span class="nav-link items" onclick="filterSelection('Sci-Fi')">Sci-Fi</span></li>
                                 <li><span class="nav-link items" onclick="filterSelection('Crime')">Crime</span></li>
+                                <li><span class="nav-link items" onclick="filterSelection('Animation')">Animation</span></li>
+                                <li><span class="nav-link items" onclick="filterSelection('Romance')">Romance</span></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -53,11 +55,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2" id="search_bar" type="search" onkeyup="searchfun()"
                             placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -106,11 +108,73 @@
     </section>
     <section class="card-sec">
         <div class="container">
-            <div class="filter_headings">
-                <!-- <span>New Movies</span> -->
-                <div class="row" id="row">
-
+            <!-- <div class="mov_filter row">
+                <div class="dropdown col-3 col-sm-4 col-md-1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-hash"></i>Genres <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Adventure">Adventure
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Drama" checked>Drama
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Action" checked>Action
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Thriller" checked>Thriller
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Mystery" checked>Mystery
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Horror" checked>Horror
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Sci-Fi" checked>Sci-Fi
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Genre" value="Crime" checked>Crime
+                          </div>
+                    </ul>
                 </div>
+                <div class="dropdown col-3 col-sm-4 col-md-1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-hash"></i>Language <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Language" value="English">English
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Language" value="Malayalam" checked>Malayalam
+                          </div>
+                    </ul>
+                </div>
+                <div class="dropdown col-3 col-sm-4 col-md-1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-hash"></i>Year <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Year" value="2022">2022
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Year" value="2021" checked>2021
+                          </div>
+                    </ul>
+                </div>
+                <div class="dropdown col-12 col-sm-4 col-md-1">
+                    <button class="btn btn-secondary btn_filter">Filter</button>
+                </div>
+            </div> -->
+            <div class="row" id="row">
+
             </div>
 
         </div>

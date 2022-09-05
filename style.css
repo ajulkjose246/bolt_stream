@@ -78,18 +78,33 @@ a {
 /* card-sec */
 .card-sec{
     margin-top: 5%;
-}
-.selmovie{
-    display: none;
-}
-.show {
-    display: block;
+    color: white;
 }
 
+
+.hide {
+    display: none;
+  }
+
+.table-pagination {
+    white-space: nowrap;
+}
+
+.table-pagination:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.movie_heading{
+    color: white;
+}
 .items{
     cursor: pointer;
 }
-
+.card-img {
+    text-align: center;
+}
 .card-img img {
     border-style: solid;
     border-color: white;
@@ -154,7 +169,8 @@ a {
 
 .movie-name {
     font-weight: 500;
-    font-size: x-large;
+    font-size: small;
+    text-align: center;
 }
 
 .movie-details-row {

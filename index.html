@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item" id="testing">
-                            <span class="nav-link items actives" onclick="filterSelection('all')">Home</span>
+                            <span class="nav-link items actives" onclick="filterProduct('all')">Home</span>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -30,16 +30,21 @@
                                 Genre <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><span class="nav-link items" onclick="filterSelection('Adventure')">Adventure</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Drama')">Drama</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Action')">Action</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Thriller')">Thriller</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Mystery')">Mystery</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Horror')">Horror</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Sci-Fi')">Sci-Fi</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Crime')">Crime</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Animation')">Animation</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Romance')">Romance</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Adventure')">Adventure</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Drama')">Drama</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Action')">Action</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Thriller')">Thriller</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Mystery')">Mystery</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Horror')">Horror</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Sci-Fi')">Sci-Fi</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Crime')">Crime</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Animation')">Animation</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Romance')">Romance</span>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -48,13 +53,18 @@
                                 Language <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><span class="nav-link items" onclick="filterSelection('English')">English</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Malayalam')">Malayalam</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Tamil')">Tamil</span></li>
-                                <li><span class="nav-link items" onclick="filterSelection('Hindi')">Hindi</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('English')">English</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Malayalam')">Malayalam</span>
+                                </li>
+                                <li><span class="nav-link items" onclick="filterProduct('Tamil')">Tamil</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Hindi')">Hindi</span></li>
+                                <li><span class="nav-link items" onclick="filterProduct('Telugu')">Telugu</span></li>
                             </ul>
                         </li>
                     </ul>
+                        <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search"> 
+                        <button class="btn btn-outline-success" id="search">Search</button>
                 </div>
             </div>
         </nav>
@@ -75,5 +85,31 @@
 <script src="./js/firebase.js" type="module"></script>
 <script src="./js/index.js"></script>
 <script src="./js/stream.js"></script>
+<script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("row");
+    subdiv = div.getElementsByTagName("div");
+    for (i = 0; i < subdiv.length; i++) {
+        a = subdiv[i].getElementsByTagName("div")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            subdiv[i].style.display = "";
+        } else {
+            subdiv[i].style.display = "none";
+        }
+    }
+}
+</script>
+<script>
+    $(document).ready(function () {
+        setTimeout(
+            function () {
+                filterProduct("all")
+            }, 3000);
+    })
+</script>
 
 </html>

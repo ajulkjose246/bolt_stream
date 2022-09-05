@@ -18,8 +18,3 @@ const db = getFirestore()
 //load index page content
 displaydata(collection, db, getDocs,doc,getDoc);
 
-//load stream page content
-streamdata(db,doc,getDoc);
-$("#upload_btn").click(function () {
-  add_user_data(collection,db,addDoc)
-})

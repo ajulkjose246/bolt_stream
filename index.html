@@ -2,6 +2,7 @@
 
 <head>
     <title>Bolt Stream</title>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <!-- <meta http-equiv="refresh" content="5" /> -->
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
@@ -13,7 +14,7 @@
     <section class="navbar-sec">
         <nav class="navbar fixed-top navbar-expand-lg bg-color">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Bolt Stream</a>
+                <img class="logo" src="./img/logo.png">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +45,9 @@
                                 <li><span class="nav-link items" onclick="filterProduct('Animation')">Animation</span>
                                 </li>
                                 <li><span class="nav-link items" onclick="filterProduct('Romance')">Romance</span>
+                                <li><span class="nav-link items" onclick="filterProduct('Comedy')">Comedy </span>
+                                <li><span class="nav-link items" onclick="filterProduct('Fantasy')">Fantasy</span>
+                                <li><span class="nav-link items" onclick="filterProduct('Family')">Family</span>
                                 </li>
                             </ul>
                         </li>
@@ -69,7 +73,7 @@
     </section>
     <section class="card-sec">
         <div class="container">
-            <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search"> <br>
+            <input class="form-control me-2" id="search-input" type="search" placeholder="Search Movies" aria-label="Search"> <br>
             <div class="row" id="row">
 
             </div>

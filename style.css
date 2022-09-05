@@ -41,7 +41,9 @@ a {
 .nav-link {
     color: white !important;
 }
-
+.logo{
+    width: 16%;
+}
 .navbar {
     border-style: solid;
     border-bottom-color: #0b2e4e;
@@ -62,25 +64,16 @@ a {
 .dropdown-toggle::after {
     content: none !important;
 }
-
-/* loading-sec */
-
-.loading-sec {
-    background-color: #0e2336;
-}
-
-.loading-sec img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* card-sec */
 .card-sec{
     margin-top: 5%;
     color: white;
 }
-
+.movie_name {
+    font-weight: 500;
+    font-size: small;
+    text-align: center;
+}
 
 .hide {
     display: none;
@@ -169,9 +162,11 @@ a {
 
 .movie-name {
     font-weight: 500;
-    font-size: small;
+    font-size: x-large;
     text-align: center;
 }
+
+
 
 .movie-details-row {
     margin-bottom: 5%;
@@ -237,5 +232,8 @@ a {
     }
     .card-sec{
         margin-top: 15%;
+    }
+    .logo{
+        width: 50%;
     }
 }

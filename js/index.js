@@ -6,7 +6,7 @@ function displaydata(collection, db, getDocs) {
             var mov_name = doc.data().Name;
 
             mov_name = mov_name.replace(/ /g, "_")
-            $('#row').append("<div class='col-6 col-sm-6 col-md-4 col-lg-2 selmovie hide" + doc.data().Genre + " " + doc.data().Language + "'  id='" + doc.id + "'><div class='card-img' id='card-img'><a href='stream.html?" + mov_name + "'><img src='" + doc.data().ImageUrl + "'></a></div><div class='container'><h5 class='movie-name'>" + doc.data().Name.toUpperCase() + "</h5></div></div>");
+            $('#row').append("<div class='col-6 col-sm-6 col-md-4 col-lg-2 selmovie hide" + doc.data().Genre + " " + doc.data().Language + "'  id='" + doc.id + "'><div class='card-img' id='card-img'><a href='stream.html?" + mov_name + "'><img src='" + doc.data().ImageUrl + "'></a></div><div class='container'><h5 class='movie_name'>" + doc.data().Name.toUpperCase() + "</h5></div></div>");
             $("#" + doc.id).click(function () {
                 localStorage.setItem("movie_id", doc.id);
             })
@@ -58,7 +58,7 @@ function filterProduct(value) {
 document.getElementById("search-input").addEventListener("keyup", () => {
     //initializations
     let searchInput = document.getElementById("search-input").value;
-    let elements = document.querySelectorAll(".movie-name");
+    let elements = document.querySelectorAll(".movie_name");
     let cards = document.querySelectorAll(".selmovie");
     //loop through all elements
     elements.forEach((element, index) => {

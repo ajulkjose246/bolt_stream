@@ -1,0 +1,8 @@
+p,h3,h5{
+    color:var(--text-color) !important;
+}
+.btn{
+    color:var(--text-color) !important;
+    border-color:var(--text-color) !important;
+    
+}

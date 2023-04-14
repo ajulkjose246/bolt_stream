@@ -1,0 +1,6 @@
+.usrProfile{
+    max-width: 100%;
+}
+body{
+    color:var(--text-color) !important;
+}

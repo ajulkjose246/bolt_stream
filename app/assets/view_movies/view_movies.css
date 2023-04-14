@@ -1,0 +1,63 @@
+body {
+  color: var(--text-color) !important;
+  overflow-x: hidden !important;
+}
+
+#cards-div {
+  background-color: var(--secondary-color);
+}
+
+.mov_img_div img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--secondary-color);
+}
+.column {
+  padding: 2% !important;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-right: 2%;
+}
+i {
+  color: blue !important;
+}
+.summary {
+  padding: 2% !important;
+  background-color: #fff !important;
+  border-radius: 10px;
+}
+.main_row {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    padding: 4% !important;
+  }
+  .summary {
+    padding: 4% !important;
+  }
+}
+
+/* embed site */
+#YTS-Logo {
+  display: none !important;
+}
+.vjs-control {
+  display: none !important;
+}
+.movBookmark {
+  position: absolute;
+  margin-top: -9px;
+  margin-left: 2%;
+}
+.bi-bookmark-fill {
+  font-size: 40px !important;
+  color: gray !important;
+}
+
+.modal-content{
+    background-color: var(--primary-color) !important;
+}

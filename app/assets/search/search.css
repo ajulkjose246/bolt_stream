@@ -1,0 +1,11 @@
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);;
+}
+
+#cards-div {
+    background-color: var(--secondary-color);
+}
+.card{
+    background-color: var(--secondary-color) !important;
+}

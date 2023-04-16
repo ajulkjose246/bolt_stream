@@ -6,10 +6,9 @@
     Bolt-Stream is a  movie streaming and downloader website
     <br/>
     <br/>
-    <a href="https://github.com/ajulkjose246/bolt_stream"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/ajulkjose246/bolt_stream">View Demo</a>
+    <a href="https://boltstream.000webhostapp.com/">View Demo</a>
     .
     <a href="https://github.com/ajulkjose246/bolt_stream/issues">Report Bug</a>
     .

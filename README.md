@@ -8,11 +8,7 @@
     <br/>
     <br/>
     <br/>
-    <a href="https://boltstream.000webhostapp.com/">View Demo</a>
-    .
-    <a href="https://github.com/ajulkjose246/bolt_stream/issues">Report Bug</a>
-    .
-    <a href="https://github.com/ajulkjose246/bolt_stream/issues">Request Feature</a>
+    
   </p>
 </p>
 
